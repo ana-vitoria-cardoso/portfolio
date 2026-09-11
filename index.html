@@ -16,16 +16,16 @@
 <body>
 
     <nav class="topbar">
-    <div class="topbar-inner">
-        <div class="dots"><span></span><span></span><span></span></div>
-        <div class="tabs">
-            <button class="tab active" data-target="#sobre">sobre.md</button>
-            <button class="tab" data-target="#projetos">projetos.js</button>
-            <button class="tab" data-target="#skills">skills.json</button>
-            <button class="tab" data-target="#contato">contato.txt</button>
+        <div class="topbar-inner">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="tabs">
+                <button class="tab active" data-target="#sobre">sobre.md</button>
+                <button class="tab" data-target="#projetos">projetos.js</button>
+                <button class="tab" data-target="#skills">skills.json</button>
+                <button class="tab" data-target="#contato">contato.txt</button>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <div class="editor">
         <div class="editor-window">
@@ -36,7 +36,8 @@
                     <span class="kw">const</span> dev = {<br>
                     &nbsp;&nbsp;nome: <span class="str">"Ana Vitória Cardoso Queiroz"</span>,<br>
                     &nbsp;&nbsp;curso: <span class="str">"Análise e Desenvolvimento de Sistemas"</span>,<br>
-                    &nbsp;&nbsp;Universidade: [<span class="str">"UNICAMP"</span>, <span class="str">"Universidade Estadual de Campinas"</span>]<br>
+                    &nbsp;&nbsp;Universidade: [<span class="str">"UNICAMP"</span>, <span class="str">"Universidade
+                        Estadual de Campinas"</span>]<br>
                     };<br>
                     <span class="fn">console</span>.log(dev);
                 </div>
@@ -44,7 +45,9 @@
         </div>
 
         <h1 class="hero-name">Ana Queiroz</h1>
-        <p class="hero-role">Estudante de Análise e Desenvolvimento de Sistemas focada em otimização de processos, resultados acertivos através de análise de dados, curiosa e com muita vontade e disposição de aprender, sempre!</p>
+        <p class="hero-role">Estudante de Análise e Desenvolvimento de Sistemas focada em otimização de processos,
+            resultados acertivos através de análise de dados, curiosa e com muita vontade e disposição de aprender,
+            sempre!</p>
         <p class="hero-tagline">
             Construindo projetos em Java, C e Python enquanto estudo padrões de projeto,
             computação gráfica e redes. Aqui estão alguns dos trabalhos que fiz até agora.
@@ -105,8 +108,27 @@
 
             <div class="project">
                 <div class="project-top">
+                    <span class="project-name">Cena de uma sala de Cinema 3D</span>
+                    <a class="project-link" href="https://github.com/ana-vitoria-cardoso/cinema" target="_blank"
+                        rel="noopener">github →</a>
+                </div>
+                <p class="project-desc">
+                    Animação 3D em C com OpenGL/GLUT simulando uma sala de cinema, com uma
+                    cena subaquática projetada na tela (água-viva, caranguejo, tartaruga) e
+                    elementos 2D alinhados à perspectiva usando <code>gluProject</code>.
+                </p>
+                <div class="tags">
+                    <span class="tag">C</span>
+                    <span class="tag">OpenGL</span>
+                    <span class="tag">GLUT</span>
+                    <span class="tag">Computação Gráfica</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-top">
                     <span class="project-name">Detector de Padrões de Projeto</span>
-                    <a class="project-link" href="https://github.com/ana-vitoria-cardoso/detector-padroes-projeto"
+                    <a class="project-link" href="https://github.com/ana-vitoria-cardoso/design-pattern-detector"
                         target="_blank" rel="noopener">github →</a>
                 </div>
                 <p class="project-desc">
@@ -125,38 +147,18 @@
 
             <div class="project">
                 <div class="project-top">
-                    <span class="project-name">Cena de Cinema 3D</span>
-                    <a class="project-link" href="https://github.com/ana-vitoria-cardoso/cena-cinema-3d" target="_blank"
-                        rel="noopener">github →</a>
-                </div>
-                <p class="project-desc">
-                    Animação 3D em C com OpenGL/GLUT simulando uma sala de cinema, com uma
-                    cena subaquática projetada na tela (água-viva, caranguejo, tartaruga) e
-                    elementos 2D alinhados à perspectiva usando <code>gluProject</code>.
-                </p>
-                <div class="tags">
-                    <span class="tag">C</span>
-                    <span class="tag">OpenGL</span>
-                    <span class="tag">GLUT</span>
-                    <span class="tag">Computação Gráfica</span>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-top">
-                    <span class="project-name">Estruturas de Arquivos — Cadastro Acadêmico</span>
-                    <a class="project-link" href="https://github.com/ana-vitoria-cardoso/estruturas-de-arquivos"
+                    <span class="project-name">Imersão de Dados com Python</span>
+                    <a class="project-link" href="https://github.com/ana-vitoria-cardoso/imersao-dados-python-alura"
                         target="_blank" rel="noopener">github →</a>
                 </div>
                 <p class="project-desc">
-                    Projeto orientado a objetos em Java que evolui a cada etapa do curso:
-                    classes de aluno e matrícula, com persistência em arquivo texto usando
-                    três estratégias diferentes (tamanho fixo, delimitador e chave/valor).
+                    Curso curto de dados com Python pela Alura, no qual desenvolvi, junto com o
+                    professor, um dashboard usando uma planilha do Excel como fonte de dados.
                 </p>
                 <div class="tags">
-                    <span class="tag">Java</span>
-                    <span class="tag">POO</span>
-                    <span class="tag">Estruturas de Arquivos</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Dashboard</span>
+                    <span class="tag">Excel</span>
                 </div>
             </div>
         </section>
