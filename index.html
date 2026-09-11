@@ -1,204 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">  
-<title>Ana Queiroz — Portfólio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ana Queiroz — Portfólio</title>
 </head>
+
 <body>
 
-<div class="editor">
-  <div class="editor-window">
-    <div class="editor-titlebar">
-      <div class="dots"><span></span><span></span><span></span></div>
-      <div class="tabs">
-        <button class="tab active">sobre.md</button>
-        <button class="tab">projetos.js</button>
-        <button class="tab">skills.json</button>
-        <button class="tab">contato.txt</button>
-      </div>
-    </div>
+    <div class="editor">
+        <div class="editor-window">
+            <div class="editor-titlebar">
+                <div class="dots"><span></span><span></span><span></span></div>
+                <div class="tabs">
+                    <button class="tab active" data-target="#sobre">sobre.md</button>
+                    <button class="tab" data-target="#projetos">projetos.js</button>
+                    <button class="tab" data-target="#skills">skills.json</button>
+                    <button class="tab" data-target="#contato">contato.txt</button>
+                </div>
+            </div>
 
-    //sobre mim
-    <div class="wrap">
+            //sobre mim
+            <div class="wrap">
 
-  <section id="sobre">
-    <div class="section-head">
-      <span class="section-path">~/sobre</span>
-      <h2 class="section-title">Sobre mim</h2>
-    </div>
-    <div class="about-text">
-      <p>
-        Sou estudante de Ciência da Computação, com disciplinas em engenharia de software,
-        redes de computadores, computação gráfica e gestão de serviços de TI. Gosto de
-        entender como as coisas funcionam por baixo do capô — de matrizes de transformação 3D
-        a algoritmos de roteamento.
-      </p>
-      <p>
-        Fora da sala de aula, já passei por atendimento ao público, lançamentos de sistema
-        na área de saúde e marketing, o que me deixou confortável conversando com pessoas de
-        fora da área técnica — algo que ajuda bastante em projetos de levantamento de requisitos.
-      </p>
-    </div>
-    <dl class="about-facts">
-      <div class="fact"><dt>Formação</dt><dd>Ciência da Computação</dd></div>
-      <div class="fact"><dt>Foco atual</dt><dd>Padrões de projeto, redes, computação gráfica</dd></div>
-      <div class="fact"><dt>Linguagens</dt><dd>Java, C, Python</dd></div>
-      <div class="fact"><dt>Ferramentas</dt><dd>Git/GitHub, Maven, OpenGL/GLUT</dd></div>
-    </dl>
-  </section>
+                <section id="sobre">
+                    <div class="section-head">
+                        <span class="section-path">~/sobre</span>
+                        <h2 class="section-title">Sobre mim</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Sou estudante de Ciência da Computação, com disciplinas em engenharia de software,
+                            redes de computadores, computação gráfica e gestão de serviços de TI. Gosto de
+                            entender como as coisas funcionam por baixo do capô — de matrizes de transformação 3D
+                            a algoritmos de roteamento.
+                        </p>
+                        <p>
+                            Fora da sala de aula, já passei por atendimento ao público, lançamentos de sistema
+                            na área de saúde e marketing, o que me deixou confortável conversando com pessoas de
+                            fora da área técnica — algo que ajuda bastante em projetos de levantamento de requisitos.
+                        </p>
+                    </div>
+                    <dl class="about-facts">
+                        <div class="fact">
+                            <dt>Formação</dt>
+                            <dd>Ciência da Computação</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Foco atual</dt>
+                            <dd>Padrões de projeto, redes, computação gráfica</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Linguagens</dt>
+                            <dd>Java, C, Python</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Ferramentas</dt>
+                            <dd>Git/GitHub, Maven, OpenGL/GLUT</dd>
+                        </div>
+                    </dl>
+                </section>
 
-  /*seção de projetos*/
-  <section id="projetos">
-  <div class="section-head">
-    <span class="section-path">~/projetos</span>
-    <h2 class="section-title">Projetos</h2>
-  </div>
+                /*seção de projetos*/
+                <section id="projetos">
+                    <div class="section-head">
+                        <span class="section-path">~/projetos</span>
+                        <h2 class="section-title">Projetos</h2>
+                    </div>
 
-  <div class="project">
-    <div class="project-top">
-      <span class="project-name">Detector de Padrões de Projeto</span>
-      <a class="project-link" href="https://github.com/ana-vitoria-cardoso/detector-padroes-projeto" target="_blank" rel="noopener">github →</a>
-    </div>
-    <p class="project-desc">
-      Ferramenta de análise estática em Java que identifica padrões de projeto
-      (Singleton, Observer, Decorator) diretamente na árvore sintática do código,
-      usando JavaParser. Projeto estruturado em Maven, feito para a disciplina de
-      Padrões de Projeto.
-    </p>
-    <div class="tags">
-      <span class="tag">Java</span>
-      <span class="tag">Maven</span>
-      <span class="tag">JavaParser</span>
-      <span class="tag">AST</span>
-    </div>
-  </div>
+                    <div class="project">
+                        <div class="project-top">
+                            <span class="project-name">Detector de Padrões de Projeto</span>
+                            <a class="project-link"
+                                href="https://github.com/ana-vitoria-cardoso/detector-padroes-projeto" target="_blank"
+                                rel="noopener">github →</a>
+                        </div>
+                        <p class="project-desc">
+                            Ferramenta de análise estática em Java que identifica padrões de projeto
+                            (Singleton, Observer, Decorator) diretamente na árvore sintática do código,
+                            usando JavaParser. Projeto estruturado em Maven, feito para a disciplina de
+                            Padrões de Projeto.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Maven</span>
+                            <span class="tag">JavaParser</span>
+                            <span class="tag">AST</span>
+                        </div>
+                    </div>
 
-  <div class="project">
-    <div class="project-top">
-      <span class="project-name">Cena de Cinema 3D</span>
-      <a class="project-link" href="https://github.com/ana-vitoria-cardoso/cena-cinema-3d" target="_blank" rel="noopener">github →</a>
-    </div>
-    <p class="project-desc">
-      Animação 3D em C com OpenGL/GLUT simulando uma sala de cinema, com uma
-      cena subaquática projetada na tela (água-viva, caranguejo, tartaruga) e
-      elementos 2D alinhados à perspectiva usando <code>gluProject</code>.
-    </p>
-    <div class="tags">
-      <span class="tag">C</span>
-      <span class="tag">OpenGL</span>
-      <span class="tag">GLUT</span>
-      <span class="tag">Computação Gráfica</span>
-    </div>
-  </div>
+                    <div class="project">
+                        <div class="project-top">
+                            <span class="project-name">Cena de Cinema 3D</span>
+                            <a class="project-link" href="https://github.com/ana-vitoria-cardoso/cena-cinema-3d"
+                                target="_blank" rel="noopener">github →</a>
+                        </div>
+                        <p class="project-desc">
+                            Animação 3D em C com OpenGL/GLUT simulando uma sala de cinema, com uma
+                            cena subaquática projetada na tela (água-viva, caranguejo, tartaruga) e
+                            elementos 2D alinhados à perspectiva usando <code>gluProject</code>.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">C</span>
+                            <span class="tag">OpenGL</span>
+                            <span class="tag">GLUT</span>
+                            <span class="tag">Computação Gráfica</span>
+                        </div>
+                    </div>
 
-  <div class="project">
-    <div class="project-top">
-      <span class="project-name">Estruturas de Arquivos — Cadastro Acadêmico</span>
-      <a class="project-link" href="https://github.com/ana-vitoria-cardoso/estruturas-de-arquivos" target="_blank" rel="noopener">github →</a>
-    </div>
-    <p class="project-desc">
-      Projeto orientado a objetos em Java que evolui a cada etapa do curso:
-      classes de aluno e matrícula, com persistência em arquivo texto usando
-      três estratégias diferentes (tamanho fixo, delimitador e chave/valor).
-    </p>
-    <div class="tags">
-      <span class="tag">Java</span>
-      <span class="tag">POO</span>
-      <span class="tag">Estruturas de Arquivos</span>
-    </div>
-  </div>
-</section>
+                    <div class="project">
+                        <div class="project-top">
+                            <span class="project-name">Estruturas de Arquivos — Cadastro Acadêmico</span>
+                            <a class="project-link" href="https://github.com/ana-vitoria-cardoso/estruturas-de-arquivos"
+                                target="_blank" rel="noopener">github →</a>
+                        </div>
+                        <p class="project-desc">
+                            Projeto orientado a objetos em Java que evolui a cada etapa do curso:
+                            classes de aluno e matrícula, com persistência em arquivo texto usando
+                            três estratégias diferentes (tamanho fixo, delimitador e chave/valor).
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">POO</span>
+                            <span class="tag">Estruturas de Arquivos</span>
+                        </div>
+                    </div>
+                </section>
 
-//skills
-<section id="skills">
-  <div class="section-head">
-    <span class="section-path">~/skills</span>
-    <h2 class="section-title">Habilidades</h2>
-  </div>
-  <div class="skill-groups">
-    <div class="skill-group">
-      <h3>LINGUAGENS</h3>
-      <ul>
-        <li>Java</li>
-        <li>C</li>
-        <li>Python</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <h3>FERRAMENTAS</h3>
-      <ul>
-        <li>Git & GitHub</li>
-        <li>Maven</li>
-        <li>OpenGL / GLUT</li>
-        <li>VS Code</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <h3>CONCEITOS</h3>
-      <ul>
-        <li>Padrões de projeto</li>
-        <li>Redes de computadores</li>
-        <li>Computação gráfica</li>
-        <li>ITIL / COBIT</li>
-      </ul>
-    </div>
-  </div>
-</section>
+                //skills
+                <section id="skills">
+                    <div class="section-head">
+                        <span class="section-path">~/skills</span>
+                        <h2 class="section-title">Habilidades</h2>
+                    </div>
+                    <div class="skill-groups">
+                        <div class="skill-group">
+                            <h3>LINGUAGENS</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>C</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3>FERRAMENTAS</h3>
+                            <ul>
+                                <li>Git & GitHub</li>
+                                <li>Maven</li>
+                                <li>OpenGL / GLUT</li>
+                                <li>VS Code</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3>CONCEITOS</h3>
+                            <ul>
+                                <li>Padrões de projeto</li>
+                                <li>Redes de computadores</li>
+                                <li>Computação gráfica</li>
+                                <li>ITIL / COBIT</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
-/*contatos*/
-<section id="contato">
-  <div class="section-head">
-    <span class="section-path">~/contato</span>
-    <h2 class="section-title">Contato</h2>
-  </div>
-  <div class="contact-card">
-    <p class="contact-lead">
-      Estou em busca de oportunidades de estágio. Se quiser conversar sobre algum
-      projeto ou vaga, me chama por qualquer um dos canais abaixo.
-    </p>
-    <div class="contact-list">
-      <a class="contact-row" href="cardosoanavitoria9@gmail.com"><span class="k">email</span> cardosoanavitoria9@gmail.com</a>
-      <a class="contact-row" href="https://github.com/ana-vitoria-cardoso" target="_blank" rel="noopener"><span class="k">github</span> github.com/ana-vitoria-cardoso</a>
-      <a class="contact-row" href="https://www.linkedin.com/in/ana-vitoria-cardoso/" target="_blank" rel="noopener"><span class="k">linkedin</span> linkedin.com/in/ana-vitoria-cardoso/</a>
+                /*contatos*/
+                <section id="contato">
+                    <div class="section-head">
+                        <span class="section-path">~/contato</span>
+                        <h2 class="section-title">Contato</h2>
+                    </div>
+                    <div class="contact-card">
+                        <p class="contact-lead">
+                            Estou em busca de oportunidades de estágio. Se quiser conversar sobre algum
+                            projeto ou vaga, me chama por qualquer um dos canais abaixo.
+                        </p>
+                        <div class="contact-list">
+                            <a class="contact-row" href="cardosoanavitoria9@gmail.com"><span class="k">email</span>
+                                cardosoanavitoria9@gmail.com</a>
+                            <a class="contact-row" href="https://github.com/ana-vitoria-cardoso" target="_blank"
+                                rel="noopener"><span class="k">github</span> github.com/ana-vitoria-cardoso</a>
+                            <a class="contact-row" href="https://www.linkedin.com/in/ana-vitoria-cardoso/"
+                                target="_blank" rel="noopener"><span class="k">linkedin</span>
+                                linkedin.com/in/ana-vitoria-cardoso/</a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            /*rodapé*/
+            <footer>index.html · feito com HTML, CSS e JS puro</footer>
+
+            /*click nas abas*/
+            <script>
+                const tabs = document.querySelectorAll('.tab');
+
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const targetId = tab.getAttribute('data-target');
+                        const target = document.querySelector(targetId);
+
+                        target.scrollIntoView({ behavior: 'smooth' });
+
+                        tabs.forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+                    });
+                });
+            </script>
+
+            <div class="editor-body">
+                <div class="linenums">1<br>2<br>3<br>4<br>5<br>6<br>7</div>
+                <div class="code-content">
+                    <span class="cm">// portfólio</span><br>
+                    <span class="kw">const</span> dev = {<br>
+                    &nbsp;&nbsp;nome: <span class="str">"Ana Queiroz"</span>,<br>
+                    &nbsp;&nbsp;curso: <span class="str">"Ciência da Computação"</span>,<br>
+                    &nbsp;&nbsp;foco: [<span class="str">"software"</span>, <span class="str">"redes"</span>, <span
+                        class="str">"gráfica"</span>]<br>
+                    };<br>
+                    <span class="fn">console</span>.log(dev);
+                </div>
+            </div>
+        </div>
+
+        <h1 class="hero-name">Ana Queiroz</h1>
+        <p class="hero-role">Estudante de Ciência da Computação — desenvolvimento, redes e sistemas</p>
+        <p class="hero-tagline">
+            Construindo projetos em Java, C e Python enquanto estudo padrões de projeto,
+            computação gráfica e redes. Aqui estão alguns dos trabalhos que fiz até agora.
+        </p>
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="#">Ver projetos</a>
+            <a class="btn btn-secondary" href="#">Contato</a>
+        </div>
     </div>
-  </div>
-</section>
-
-</div>
-
-/*rodapé*/
-<footer>index.html · feito com HTML, CSS e JS puro</footer>
-
-    <div class="editor-body">
-      <div class="linenums">1<br>2<br>3<br>4<br>5<br>6<br>7</div>
-      <div class="code-content">
-        <span class="cm">// portfólio</span><br>
-        <span class="kw">const</span> dev = {<br>
-        &nbsp;&nbsp;nome: <span class="str">"Ana Queiroz"</span>,<br>
-        &nbsp;&nbsp;curso: <span class="str">"Ciência da Computação"</span>,<br>
-        &nbsp;&nbsp;foco: [<span class="str">"software"</span>, <span class="str">"redes"</span>, <span class="str">"gráfica"</span>]<br>
-        };<br>
-        <span class="fn">console</span>.log(dev);
-      </div>
-    </div>
-  </div>
-
-  <h1 class="hero-name">Ana Queiroz</h1>
-  <p class="hero-role">Estudante de Ciência da Computação — desenvolvimento, redes e sistemas</p>
-  <p class="hero-tagline">
-    Construindo projetos em Java, C e Python enquanto estudo padrões de projeto,
-    computação gráfica e redes. Aqui estão alguns dos trabalhos que fiz até agora.
-  </p>
-  <div class="hero-actions">
-    <a class="btn btn-primary" href="#">Ver projetos</a>
-    <a class="btn btn-secondary" href="#">Contato</a>
-  </div>
-</div>
 
 </body>
+
 </html>
