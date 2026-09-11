@@ -272,3 +272,11 @@ footer{
   font-family: var(--mono);
   font-size: 12px;
 }
+
+/*responsividade*/
+@media (max-width: 640px){
+  .editor-body{ padding: 28px 20px 32px; }
+  .linenums{ display: none; }
+  .about-facts{ grid-template-columns: 1fr; }
+  section{ padding: 60px 0; }
+}
