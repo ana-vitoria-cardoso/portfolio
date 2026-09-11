@@ -24,3 +24,90 @@ h1{
   font-family: var(--display);
   font-weight: 800;
 }
+
+.editor{
+  max-width: 900px;
+  margin: 56px auto 0;
+  padding: 0 24px;
+}
+
+.editor-window{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.editor-titlebar{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 16px;
+  background: #232837;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+
+.dots{ display: flex; gap: 7px; flex-shrink: 0; }
+.dots span{ width: 11px; height: 11px; border-radius: 50%; background: #3a4050; }
+
+.tabs{ display: flex; gap: 4px; }
+.tab{
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--muted-2);
+  background: transparent;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tab.active{ color: var(--accent); background: rgba(143,201,163,0.08); }
+
+.editor-body{
+  display: flex;
+  padding: 40px 32px 44px;
+}
+
+.linenums{
+  font-family: var(--mono);
+  font-size: 13px;
+  color: #3d4457;
+  text-align: right;
+  padding-right: 20px;
+  user-select: none;
+  line-height: 1.9;
+  flex-shrink: 0;
+}
+
+.code-content{ font-family: var(--mono); font-size: 13px; line-height: 1.9; }
+.kw{ color: #7fa8d9; }
+.str{ color: var(--accent); }
+.cm{ color: #5c6478; }
+.fn{ color: var(--accent-2); }
+
+.hero-name{
+  font-family: var(--display);
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  line-height: 1.1;
+  margin: 14px 0 10px;
+}
+
+.hero-role{ font-size: 1.05rem; color: var(--muted-2); margin-bottom: 20px; }
+.hero-tagline{ max-width: 56ch; color: var(--muted-2); margin-bottom: 28px; }
+.hero-actions{ display: flex; gap: 12px; flex-wrap: wrap; }
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 11px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.btn-primary{ background: var(--accent); color: #0d1710; }
+.btn-secondary{ background: transparent; color: var(--text); border-color: var(--border); }
