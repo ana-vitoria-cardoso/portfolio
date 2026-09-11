@@ -204,3 +204,27 @@ section{ padding: 90px 0; border-bottom: 1px solid var(--border); }
   padding: 3px 9px;
   border-radius: 4px;
 }
+
+/*skills*/
+.skill-groups{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+.skill-group h3{
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.skill-group ul{ list-style: none; }
+.skill-group li{
+  color: #cfcdc8;
+  font-size: 0.92rem;
+  padding: 5px 0;
+  border-bottom: 1px dashed var(--border);
+}
+.skill-group li:last-child{ border-bottom: none; }
