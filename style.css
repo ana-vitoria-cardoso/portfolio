@@ -228,3 +228,47 @@ section{ padding: 90px 0; border-bottom: 1px solid var(--border); }
   border-bottom: 1px dashed var(--border);
 }
 .skill-group li:last-child{ border-bottom: none; }
+
+/*contato e rodapé*/
+.contact-card{
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 36px;
+}
+
+.contact-lead{
+  color: #cfcdc8;
+  max-width: 50ch;
+  margin-bottom: 26px;
+  font-size: 1rem;
+}
+
+.contact-list{ display: flex; flex-direction: column; gap: 14px; }
+
+.contact-row{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+.contact-row .k{
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: 12px;
+  width: 76px;
+  flex-shrink: 0;
+}
+
+footer{
+  padding: 32px 0 60px;
+  text-align: center;
+  color: #4a5266;
+  font-family: var(--mono);
+  font-size: 12px;
+}
