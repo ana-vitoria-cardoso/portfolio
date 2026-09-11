@@ -182,8 +182,10 @@
                             projeto ou vaga, me chama por qualquer um dos canais abaixo.
                         </p>
                         <div class="contact-list">
-                            <a class="contact-row" href="cardosoanavitoria9@gmail.com"><span class="k">email</span>
-                                cardosoanavitoria9@gmail.com</a>
+                            <a class="contact-row" href="mailto:cardosoanavitoria9@gmail.com" id="email-link">
+                                <span class="k">email</span> cardosoanavitoria9@gmail.com
+                                <span class="copy-feedback" id="copy-feedback">copiado!</span>
+                            </a>
                             <a class="contact-row" href="https://github.com/ana-vitoria-cardoso" target="_blank"
                                 rel="noopener"><span class="k">github</span> github.com/ana-vitoria-cardoso</a>
                             <a class="contact-row" href="https://www.linkedin.com/in/ana-vitoria-cardoso/"
@@ -212,6 +214,16 @@
                         tabs.forEach(t => t.classList.remove('active'));
                         tab.classList.add('active');
                     });
+                });
+
+                /*copiar email*/
+                const emailLink = document.getElementById('email-link');
+                const copyFeedback = document.getElementById('copy-feedback');
+
+                emailLink.addEventListener('click', () => {
+                    navigator.clipboard.writeText('cardosoanavitoria9@gmail.com');
+                    copyFeedback.classList.add('show');
+                    setTimeout(() => copyFeedback.classList.remove('show'), 2000);
                 });
             </script>
 

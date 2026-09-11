@@ -280,3 +280,16 @@ footer{
   .about-facts{ grid-template-columns: 1fr; }
   section{ padding: 60px 0; }
 }
+
+/*copiar email*/
+.contact-row{ position: relative; }
+
+.copy-feedback{
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.copy-feedback.show{ opacity: 1; }
