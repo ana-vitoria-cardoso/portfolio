@@ -1,0 +1,26 @@
+:root{
+  --bg: #11141a;
+  --surface: #191d26;
+  --text: #e9e7e2;
+  --muted-2: #9099a8;
+  --accent: #8fc9a3;
+  --accent-2: #e2a35c;
+  --border: #2a2f3d;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  --sans: 'Inter', -apple-system, sans-serif;
+  --display: 'Sora', var(--sans);
+}
+
+*{ box-sizing: border-box; margin: 0; padding: 0; }
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.55;
+}
+
+h1{
+  font-family: var(--display);
+  font-weight: 800;
+}
